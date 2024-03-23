@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# IDE0002: Simplificar acceso de miembros
+dotnet_diagnostic.IDE0002.severity = silent
