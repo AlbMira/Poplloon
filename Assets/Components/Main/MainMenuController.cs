@@ -4,43 +4,46 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class MainMenuController : Singleton<MainMenuController>
+namespace Poplloon.main
 {
-    [SerializeField] private TextMeshProUGUI _filterText;
-    public static int indexFilter;
-
-    private void LateUpdate()
+    public class MainMenuController : Singleton<MainMenuController>
     {
-        _filterText.text = SetFilterController.colorBlindFilters[indexFilter];
-    }
+        [SerializeField] private TextMeshProUGUI _filterText;
+        public static int indexFilter;
 
-    private void Update()
-    {
-        if (indexFilter < 0)
+        private void LateUpdate()
         {
-            indexFilter += 5;
+            _filterText.text = SetFilterController.colorBlindFilters[indexFilter];
         }
 
-        if (indexFilter > 4)
+        private void Update()
         {
-            indexFilter -= 5;
+            if (indexFilter < 0)
+            {
+                indexFilter += 5;
+            }
+
+            if (indexFilter > 4)
+            {
+                indexFilter -= 5;
+            }
         }
-    }
 
-    public void PlayGame(string input)
-    {
-        input = SetFilterController.colorBlindFilters[indexFilter];
+        public void PlayGame(string input)
+        {
+            input = SetFilterController.colorBlindFilters[indexFilter];
 
-        SceneManager.LoadScene("Play");
-    }
+            SceneManager.LoadScene("Play");
+        }
 
-    public void RightArrow()
-    {
-        indexFilter++;
-    }
+        public void RightArrow()
+        {
+            indexFilter++;
+        }
 
-    public void LeftArrow()
-    {
-        indexFilter--;
+        public void LeftArrow()
+        {
+            indexFilter--;
+        }
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Poplloon.Attributes;
+using Poplloon.main;
 
 public class GameManager : Singleton<GameManager>
 {

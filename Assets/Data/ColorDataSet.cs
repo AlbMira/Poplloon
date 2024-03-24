@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Poplloon.Entity;
+using Poplloon.main;
 using TMPro;
 
 namespace Poplloon.Attributes
