@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Poplloon.Factory;
 using Poplloon.Attributes;
+using Poplloon.Audio;
 
 namespace Poplloon.Entity
 {
@@ -21,9 +22,10 @@ namespace Poplloon.Entity
         [SerializeField] private ParticleSystem _main;
 
         [Space]
-        [Header("Teddy falling parameters")]
+        [Header("Teddy parameters")]
         [SerializeField] private Transform _parent;
         [SerializeField] private Rigidbody _rbTeddy;
+        private bool _isTeddy;
       
 
         internal override void EnableOnInstance()
@@ -61,6 +63,7 @@ namespace Poplloon.Entity
             if(data.GetName() == "Ribbon")
             {
                 _teddy.SetActive(true);
+                _isTeddy = true;
             }
 
             else { _teddy.SetActive(false); }
@@ -83,8 +86,14 @@ namespace Poplloon.Entity
         private IEnumerator DisableEntity()
         {
             _model.SetActive(false);
-
             gameObject.GetComponent<BoxCollider>().enabled = false;
+
+            AudioManager.Instance.PlayClip(0);
+
+            if(_isTeddy)
+            {
+                AudioManager.Instance.PlayClip(1);
+            }
 
             _main.Play();
             _teddy.transform.SetParent(null);

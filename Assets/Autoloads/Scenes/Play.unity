@@ -289,10 +289,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 5657356909566141211}
   audioClips:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: fa96305a888d36d4d887a3ebf0ec04c3, type: 3}
+  - {fileID: 8300000, guid: 8844ae65060c89744bdb7748e0eaf87e, type: 3}
   currentClip: {fileID: 0}
-  index: 0
 --- !u!4 &162717587
 Transform:
   m_ObjectHideFlags: 0
