@@ -16,6 +16,7 @@ namespace Poplloon.Entity
 
         [Space]
         public Color color;
+        [SerializeField] private int _id;
 
         [Space]
         [Header("Particle System")]
@@ -54,6 +55,7 @@ namespace Poplloon.Entity
             _model.transform.GetChild(0).GetComponent<Renderer>().material.color = colorData;
 
             color = colorData;
+            _id = UnityEngine.Random.Range(1, 16);
         }
 
         public void SetTail(MeshData data)
@@ -66,7 +68,7 @@ namespace Poplloon.Entity
                 _isTeddy = true;
             }
 
-            else { _teddy.SetActive(false); }
+            else { _teddy.SetActive(false) ; Debug.Log(_id) ; _isTeddy = false ; }
         }
 
         public void SetTeddy(MeshData data)

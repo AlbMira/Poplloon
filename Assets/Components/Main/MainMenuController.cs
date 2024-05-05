@@ -3,13 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using Poplloon.Audio;
 
 namespace Poplloon.main
 {
-    public class MainMenuController : Singleton<MainMenuController>
+    public class MainMenuController : MonoBehaviour
     {
+        public static MainMenuController Instance { get; private set; }
         [SerializeField] private TextMeshProUGUI _filterText;
         public static int indexFilter;
+
+        private void Start()
+        {
+            AudioManager.Instance.PlayMainTheme();
+            AudioManager.Instance.musicSource.mute = false;
+        }
 
         private void LateUpdate()
         {

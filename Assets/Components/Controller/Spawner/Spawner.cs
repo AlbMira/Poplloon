@@ -6,7 +6,7 @@ using Poplloon.Entity;
 
 namespace Poplloon.Utilities
 {
-    public class Spawner : Singleton<Spawner>
+    public class Spawner : MonoBehaviour
     {
         [Header("Config factory and factory method")]
         [SerializeField] private BalloonConfig _balloonConfig;

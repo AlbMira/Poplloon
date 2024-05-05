@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CancelButtonComponent : Singleton<CancelButtonComponent>
+public class CancelButtonComponent : MonoBehaviour
 {
     [SerializeField] private Button _dropDownButton;
 

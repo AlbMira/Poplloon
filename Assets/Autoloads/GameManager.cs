@@ -4,8 +4,10 @@ using UnityEngine;
 using Poplloon.Attributes;
 using Poplloon.main;
 
-public class GameManager : Singleton<GameManager>
+public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance { get; private set; }
+
     public ColorData _colorBlind;
 
     [Space]
@@ -27,6 +29,11 @@ public class GameManager : Singleton<GameManager>
     [Header("Time Manager")]
     public float slowDownFactor;
     public float slowDownLength;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {

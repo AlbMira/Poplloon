@@ -67,8 +67,8 @@ namespace Poplloon.Attributes
                                                        new KeyValuePair<string, Color>("Blue", new Color(0, 0.3058824f, 0.3176471f, 1)),
                                                        new KeyValuePair<string, Color>("Green", new Color(0.4117647f, 0.8627451f, 0.9294118f, 1)),
                                                        new KeyValuePair<string, Color>("Yellow", new Color(0.972549f, 0.8901961f, 0.9019608f, 1))});
-            AddColorSet("acromatopsia", new KeyValuePair<string, Color>[] { new KeyValuePair<string, Color>("Red", new Color(0.25f, 0.25f, 0.25f, 1)),
-                                                       new KeyValuePair<string, Color>("Blue", new Color(0, 0.3058824f, 0.3176471f, 1)),
+            AddColorSet("acromatopsia", new KeyValuePair<string, Color>[] { new KeyValuePair<string, Color>("Red", new Color(0.6117647f, 0.6117647f, 0.6117647f, 1)),
+                                                       new KeyValuePair<string, Color>("Blue", new Color(0.3137255f, 0.3137255f, 0.3137255f, 1)),
                                                        new KeyValuePair<string, Color>("Green", new Color(0.4117647f, 0.8627451f, 0.9294118f, 1)),
                                                        new KeyValuePair<string, Color>("Yellow", new Color(0.5f, 0.5f, 0.2f, 1))});
 

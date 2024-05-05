@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Poplloon.Attributes;
+using UnityEditor.PackageManager;
 
-public class ColorIndicator : Singleton<ColorIndicator>
+public class ColorIndicator : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _textColor;
     [SerializeField] private TextMeshProUGUI _currentColor;

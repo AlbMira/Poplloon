@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.UI;
 using Poplloon.RayCast;
 
-public class InGameMenuController : Singleton<InGameMenuController>
+public class InGameMenuController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI[] _advicersPlayTextActive;
     [SerializeField] private Button _dropDownButtonActive;
