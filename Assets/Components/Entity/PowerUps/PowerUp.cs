@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Poplloon.Audio;
 using UnityEngine;
 
 namespace Poplloon.Entity
@@ -41,6 +42,8 @@ namespace Poplloon.Entity
             _model.SetActive(false);
 
             gameObject.GetComponent<BoxCollider>().enabled = false;
+
+            AudioManager.Instance.PlayClip(0);
 
             _main.Play();
 

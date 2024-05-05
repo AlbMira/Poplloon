@@ -23,6 +23,7 @@ namespace Poplloon.Audio
             if (AudioManager.Instance == null)
             {
                 Instance = this;
+                DontDestroyOnLoad(gameObject);
             }
 
             else { Destroy(gameObject); }

@@ -16,7 +16,6 @@ namespace Poplloon.main
         private void Start()
         {
             AudioManager.Instance.PlayMainTheme();
-            AudioManager.Instance.musicSource.mute = false;
         }
 
         private void LateUpdate()
@@ -42,6 +41,7 @@ namespace Poplloon.main
             input = SetFilterController.colorBlindFilters[indexFilter];
 
             SceneManager.LoadScene("Play");
+            AudioManager.Instance.musicSource.mute = true;
         }
 
         public void RightArrow()

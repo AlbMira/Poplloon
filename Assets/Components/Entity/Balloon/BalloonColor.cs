@@ -94,6 +94,7 @@ namespace Poplloon.Entity
 
             if(_isTeddy)
             {
+                AudioManager.Instance.PlayClip(0);
                 AudioManager.Instance.PlayClip(1);
             }
 
