@@ -18,6 +18,7 @@ public class ScoreSystem : MonoBehaviour
     }
     private void Update()
     {
+        _score = Mathf.Clamp(_score, 0, 9999999);
         _scoreText.text = _score.ToString();
     }
 }

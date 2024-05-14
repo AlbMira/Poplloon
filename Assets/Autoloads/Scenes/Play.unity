@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0000
+  m_text: 9999999
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 478ea8414ad8d9543a433c9173fe5407, type: 2}
   m_sharedMaterial: {fileID: -6042576776013462300, guid: 478ea8414ad8d9543a433c9173fe5407, type: 2}
@@ -1359,7 +1359,6 @@ MonoBehaviour:
   changeInstanceColor: 5
   slowDownFactor: 0.5
   slowDownLength: 2
-  app: {fileID: 0}
 --- !u!114 &1210940787
 MonoBehaviour:
   m_ObjectHideFlags: 0
