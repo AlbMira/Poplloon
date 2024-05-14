@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Poplloon.Attributes;
-using UnityEditor.PackageManager;
 
 public class ColorIndicator : MonoBehaviour
 {
