@@ -80,6 +80,8 @@ Through this post-mortem, we will reflect on the achievements made, the challeng
 
 - The colorblind filter doesn't cover all spectrums of the disorder, so further research is required to meet the demands of players with such deficiencies in future updates.
 
+- Users looking for a greater challenge noticed the lack of penalties, this makes the game boring to them.
+
 ---
 
 ## Conclusions:
