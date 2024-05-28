@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Autoloads/Scenes/VideoLogo.unity
+    guid: 9768662c295de5140a1c07368d4c3ada
+  - enabled: 1
     path: Assets/Autoloads/Scenes/Main.unity
     guid: 0dbc3ee3dbc5451489b02a30726ce1af
   - enabled: 1
