@@ -5171,13 +5171,14 @@ MonoBehaviour:
   _zIndex: -7
   _minScale: 2
   _maxScale: 7
-  _minXPos: -0.1
-  _maxXPos: 0.1
+  _minXPos: -0.9
+  _maxXPos: 0.9
   _isMoving: 1
   _model: {fileID: 5593462573049169204}
   _tail: {fileID: 7927078904078861977}
   _teddy: {fileID: 2230771895650927340}
   color: {r: 0, g: 0, b: 0, a: 0}
+  _id: 0
   _main: {fileID: 15151877638313038}
   _parent: {fileID: 4092613123604819711}
   _rbTeddy: {fileID: 324081675784643158}

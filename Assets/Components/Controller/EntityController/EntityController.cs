@@ -51,7 +51,7 @@ namespace Poplloon.Entity
 
                 if (_enableOffset == true)
                 {
-                    transform.Translate(_dir * _speed + Vector3.right * (Mathf.Sin(Time.time + _offset) / 1200));
+                    transform.Translate(_dir * _speed + Vector3.right * (Mathf.Sin(Time.time + _offset) / 150));
                 }
 
                 else { transform.Translate(_dir * _speed); }
