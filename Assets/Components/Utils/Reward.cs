@@ -23,7 +23,7 @@ public class Reward : MonoBehaviour
         //Compare if the color value of the balloons is equal to the color indicator, add 500 to score if it is true, else subtract
         if(PowerUpController.Controller.multiplied)
         {
-            ScoreSystem.Instance._score += IsValid(revenue) ? 1000 : -500;
+            ScoreSystem.Instance._score += IsValid(revenue) ? 500 : -500;
         }
 
         ScoreSystem.Instance._score += IsValid(revenue) ? 500 : -500;

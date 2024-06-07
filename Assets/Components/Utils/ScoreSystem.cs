@@ -6,7 +6,7 @@ using TMPro;
 public class ScoreSystem : MonoBehaviour
 {
     public static ScoreSystem Instance;
-    public int _score;
+    public float _score;
 
     [Space]
     [Header("Score Text")]
@@ -18,7 +18,7 @@ public class ScoreSystem : MonoBehaviour
     }
     private void Update()
     {
-        _score = Mathf.Clamp(_score, 0, 9999999);
+        _score = Mathf.Clamp(_score, 0f, 9999.999f);
         _scoreText.text = _score.ToString();
     }
 }
